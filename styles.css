@@ -1,0 +1,234 @@
+/* General Styles */
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #004d99;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0; /* El encabezado se mantendrá pegado en la parte superior */
+    z-index: 1000; /* Asegura que el encabezado se quede encima de otros elementos */
+}
+
+header h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    font-size: 1.1rem;
+    margin: 0 15px;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #004d99;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #004d99;
+    margin-bottom: 10px;
+}
+
+section ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+section ul li {
+    margin: 10px 0;
+}
+
+a {
+    color: #004d99;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0066cc;
+}
+
+#inicio img {
+    width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+#inicio p {
+    text-align: center;
+}
+
+#educacion ul li {
+    font-weight: bold;
+    color: #2a2a2a;
+}
+
+#contacto form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+
+#contacto label {
+    text-align: right;
+    font-weight: bold;
+}
+
+#contacto input, #contacto textarea, #contacto button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contacto textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+#contacto button {
+    background-color: #004d99;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+#contacto button:hover {
+    background-color: #0066cc;
+}
+
+footer {
+    background-color: #2a2a2a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+footer a {
+    color: #b3b3b3;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header nav ul {
+        text-align: center;
+        padding-top: 10px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    #contacto form {
+        grid-template-columns: 1fr;
+    }
+}
+
+#testimonios {
+    background-color: #e6f0ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#testimonios blockquote {
+    font-style: italic;
+    color: #333;
+}
+
+#testimonios footer {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Specific Classes */
+.perfil-imagen {
+    width: 200px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.qr-imagen {
+    width: 150px;
+    display: block;
+    margin: auto;
+}
